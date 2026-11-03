@@ -1,10 +1,12 @@
 # 双 DGX Spark × DeepSeek × OpenCode：配置与实测记录
 
+维护与实测：[@flowerpig886](https://github.com/flowerpig886)
+
 用两台 128GB DGX Spark 运行 DeepSeek-V4.1-Flash-1017 EXL3 2.9bpw，再接入 Windows OpenCode，实际修仓库、运行工具和测试恢复能力。
 
 这份报告希望回答：**这套设备能不能稳定工作，以及工作结果能不能放心交给它。**
 
-记录日期：2026-11-03。状态：本地发布草稿，尚未公开发布。数据来自我们自己的固定样本，不是官方 SWE-bench 分数。
+记录日期：2026-11-03。状态：v0.1.0 预览版。数据来自我们自己的固定样本，不是官方 SWE-bench 分数。
 
 ## 先看结果
 
