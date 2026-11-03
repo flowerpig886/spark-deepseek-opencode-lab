@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 flowerpig886
 """Prepare a fixed-version single-lane cache source file; never alter the input."""
 import argparse,ast,hashlib
 from pathlib import Path

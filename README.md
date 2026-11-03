@@ -55,3 +55,7 @@
 - [OpenCode](https://opencode.ai/)、[SWE-bench](https://github.com/SWE-bench/SWE-bench)、[pydicom](https://github.com/pydicom/pydicom)
 
 模型和推理引擎来自上游；本项目贡献是本地配置改动、测试与整理。相关配方链接用于参考，不代表上游背书或逐版本等同。授权范围见 [LICENSE-NOTES](docs/LICENSE-NOTES.md)。
+
+## 许可
+
+文档与报告：**CC BY 4.0**；新写的辅助脚本和配置：**MIT**。署名：flowerpig886。上游材料保留原有许可。完整范围与正文见 [LICENSE.md](LICENSE.md)。

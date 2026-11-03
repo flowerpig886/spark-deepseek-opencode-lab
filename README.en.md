@@ -2,6 +2,8 @@
 
 [中文主页](README.md)
 
+Maintainer and experiments: [@flowerpig886](https://github.com/flowerpig886). Version: v0.1.0 preview.
+
 This draft records our configuration and bounded experiments with DeepSeek-V4.1-Flash-1017 EXL3 2.9bpw on two 128GB DGX Sparks, using TensorFold TP2 and the backend bundled with Windows OpenCode 2.2.5.
 
 The fixed configuration uses one inference stream, vision disabled, a locally validated single-slot prefix-cache change, low reasoning effort, temperature/top_p=1, and a 32,768-token output ceiling. The OpenCode context declaration is 131,072; the engine's 1M configuration does not constitute a native OpenCode 1M acceptance test.
@@ -20,4 +22,4 @@ Experiments used private-profile backend APIs, not GUI clicks. Endurance tasks r
 
 This draft provides configuration references, numeric exports, and a fixed-version cache preparation script. It does not ship model weights, private images, raw sessions, hidden tests, or the complete project-specific validation plugin/bridge. The basic OpenCode example is not an exact reproduction of the benchmark Agent stack.
 
-See the [Chinese configuration guide](docs/CONFIGURATION.md), [methodology](docs/METHODOLOGY.md), [results and failures](docs/RESULTS.md), and [reproduction scope](docs/REPRODUCTION.md). Upstream credits and links are in the Chinese README. Final licensing and author attribution remain to be chosen before public release; no remote repository has been created by this draft.
+See the [Chinese configuration guide](docs/CONFIGURATION.md), [methodology](docs/METHODOLOGY.md), [results and failures](docs/RESULTS.md), and [reproduction scope](docs/REPRODUCTION.md). Upstream credits and links are in the Chinese README. Original documentation and report compilations are licensed under CC BY 4.0; original auxiliary code and configuration are MIT-licensed. Upstream works retain their own licenses. See [LICENSE.md](LICENSE.md) for exact scope and full texts. Repository visibility is controlled separately on GitHub.
