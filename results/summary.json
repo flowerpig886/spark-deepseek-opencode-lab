@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-03",
+  "model": "DeepSeek-V4.1-Flash-1017 EXL3 2.9bpw",
+  "parameters": {
+    "concurrency": 1,
+    "vision": false,
+    "reasoning_effort": "low",
+    "max_output_tokens": 32768,
+    "temperature": 1,
+    "top_p": 1,
+    "opencode_declared_context": 131072,
+    "engine_context": 1048576
+  },
+  "repository": {
+    "attempts": 6,
+    "unique_cases": 3,
+    "repository": "pydicom/pydicom",
+    "patch_correct": 4,
+    "full_task": 4,
+    "seconds": 1525.3871083259583,
+    "requests": 243,
+    "all_controls_verified": true
+  },
+  "soak": {
+    "seconds": 3900.809835910797,
+    "tasks": 19,
+    "requests": 706,
+    "tool_calls": 687,
+    "normal_ends": 19,
+    "temperature_peaks": [
+      78,
+      78
+    ],
+    "thermal_samples": 186,
+    "thermal_active_flags": 0,
+    "max_input_plus_cache_read": 95499
+  },
+  "recovery": [
+    {
+      "scenario": "user_interrupt_resume",
+      "interrupt_quiet": true,
+      "saved_files_preserved": true,
+      "recovery_passed": true,
+      "full_task": true,
+      "seconds": 345.7857964038849
+    },
+    {
+      "scenario": "backend_and_model_restart_resume",
+      "interrupt_quiet": true,
+      "saved_files_preserved": true,
+      "recovery_passed": true,
+      "full_task": false,
+      "seconds": 208.79885125160217
+    }
+  ],
+  "production_mutation_checkpoint": {
+    "status": "not_validated",
+    "reason": "No production mutation observed within predeclared 300-second checkpoint deadline; restart stage not entered."
+  },
+  "sampled_temperature_peaks": [
+    81,
+    80
+  ],
+  "temperature_sampling_gap": true,
+  "scope": "Single repository, three issues x two seeds; private-profile Windows backend API, not GUI. Repeated soak tasks excluded from independent quality score."
+}

@@ -1,0 +1,54 @@
+{
+  "providers": {
+    "spark-deepseek-verified": {
+      "name": "Dual Spark DeepSeek cached single lane",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:18892/v1",
+        "apiKey": "local",
+        "encoding": "none"
+      },
+      "compatibility": {
+        "reasoningField": "reasoning_content",
+        "maxTokensField": "max_tokens"
+      },
+      "body": {
+        "max_tokens": 32768,
+        "temperature": 1,
+        "top_p": 1,
+        "parallel_tool_calls": false,
+        "reasoning_effort": "low",
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      },
+      "models": {
+        "DeepSeek-V4.1-Flash-1017": {
+          "name": "DeepSeek V4.1 Flash EXL3 2.9bpw TP2",
+          "capabilities": {
+            "tools": true,
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        }
+      }
+    }
+  },
+  "agents": {
+    "local-build": {
+      "mode": "primary",
+      "description": "Basic local model connection; project-specific independent validation is not included.",
+      "model": "spark-deepseek-verified/DeepSeek-V4.1-Flash-1017",
+      "steps": 80
+    }
+  },
+  "model": "spark-deepseek-verified/DeepSeek-V4.1-Flash-1017"
+}

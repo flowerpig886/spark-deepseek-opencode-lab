@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "json_parse": "passed",
+  "relative_links_checked": 17,
+  "known_private_identifiers_scan": "passed",
+  "all_six_repository_rows_preserved": true,
+  "all_19_soak_rows_preserved": true,
+  "numeric_totals_match_private_reports": true,
+  "cache_patch_matches_archived_original_and_candidate_sha256": true,
+  "cache_patch_rejects_modified_or_already_patched_source": true,
+  "not_performed": [
+    "Fresh Docker image build",
+    "End-to-end public-harness reproduction",
+    "GUI-click test",
+    "Final author/license decision"
+  ],
+  "scope": "Local draft validation. No remote repository created and no absolute guarantee of sensitive-data absence."
+}

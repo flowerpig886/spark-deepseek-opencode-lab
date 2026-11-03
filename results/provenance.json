@@ -1,0 +1,12 @@
+{
+  "report_date": "2026-11-03",
+  "private_archive_sha256": "6bd401d6edfaed7ada9f90684cb32498366d66e71c8c0f40c014bafc8eee0f66",
+  "private_archive_bytes": 167391505,
+  "private_archive_distributed": false,
+  "private_archive_verified_member_files": 29071,
+  "upstream_engine_recorded_pin": "cb4ceaff2b8c",
+  "engine_file_original_sha256": "f726784419face244928df9d69236163135da5cafde11613304e7187fa7a401b",
+  "engine_file_patched_sha256": "38b14bea1eeb2d6a454d0a1166cc8abe70a928d2a5be5c9399a58e8265745c72",
+  "derivative_image_id": "sha256:516c3ca473fb413a0973d32d7c90c87a1d25472bdb7a79e850008e8a7cb03702",
+  "public_export_method": "Numeric fields explicitly selected from fixed reports; message IDs, host identities, absolute paths, raw logs and exception text omitted. Public rows are renamed, not token-identical transcripts."
+}
